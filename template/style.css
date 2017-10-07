@@ -1,0 +1,36 @@
+/* Style.css */
+body {
+  background-color: #68BED8;
+
+}
+
+#title {
+  text-align: center;
+  font-size: 30pt;
+  background-color: #68BED8;
+  color: grey;
+  text-decoration: bold;
+}
+
+#navbar {
+  background-color: grey;
+  text-align: center;
+  columns: 5;
+  border: 50%;
+}
+
+#navbutton {
+  text-align: center;
+  background-color: grey;
+  border-bottom: grey;
+  border-color: grey;
+  border-right: grey;
+  border-radius: 45%;
+  font-size: 14pt;
+  color: white;
+}
+
+#mission {
+  color: black;
+  font-size: 14pt;
+}
