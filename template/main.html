@@ -2,7 +2,7 @@
 
 <head>
   <link href="/template/style.css" type="text/css" rel="stylesheet" />
-
+  <script src="main.js" />
 </head>
 
 <body class="home">
@@ -58,13 +58,13 @@
     <script src="knob.js"></script>
   </div>
 
-  <form>
+  <form id="create">
     Knob name:<br>
     <input type="text" name="kName" value="Enter knob name">
     <br>
     Person name:<br>
     <input type="text" name="pName" value="Enter your name">
     <br><br>
-    <input type="submit" value="Submit">
+	<button onclick="makeKnob()">Post knob!</button>
   </form>
 </body>
