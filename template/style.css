@@ -39,6 +39,9 @@ body {
 
 #message {
   background-color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 50px;
   font-family: "Comic Sans MS";
   color: grey;
   border: 25%;
@@ -51,4 +54,11 @@ body {
 #form {
   columns: 3;
   text-align: center;
+}
+
+.knobTable {
+    color: white;
+    columns: 3;
+    font-family: "COmic Sans MS";
+    text-align: center;
 }

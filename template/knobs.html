@@ -50,27 +50,50 @@
     </div>
   </div>
   <div ID="message">
-    <div>Enter your knob below:</div>
-
     <script>
       function information() {
         var knob = document.getElementById("userKnob").value;
         var name = document.getElementById("userName").value;
         var time = document.getElementById("userTime").value;
         var div = document.createElement("p");
-        div.innerHTML = ["Knob: " + knob + "; Name: " + name + "; Time: " + time];
+        div.innerHTML = ["Knob: " + knob + ";  Name: " + name + ";  Time: " + time];
+        div.style.color='white';
+        div.style.columns='3';
         document.body.appendChild(div);
       }
     </script>
     <div ID="input">
       <div>
+        <div ID="form">
+          <div>Enter Knob</div>
+          <div>Enter Name</div>
+          <div>Enter Time</div>
+        </div>
         <form id="form" onsubmit="return false;">
-          Enter your Knob<input   type="text" id="userKnob">
-          Enter your Name<input   type="text" id="userName">
-          Enter your Time<input   type="text" id="userTime">
+          <div>
+            <input   type="text" id="userKnob">
+          </div>
+          <div>
+            <input   type="text" id="userName">
+          </div>
+          <div>
+            <input   type="text" id="userTime">
+          </div>
         </form>
       </div>
       <input   type="submit"    onclick="information()">
+    </div>
+  </div>
+
+  <div class="knobTable">
+    <div>
+      Knob
+    </div>
+    <div>
+      Name
+    </div>
+    <div>
+      Time
     </div>
   </div>
 
