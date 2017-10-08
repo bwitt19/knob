@@ -3,7 +3,14 @@ class knob {
   {
     this.knobName = knobName;
     this.personName = personName;
-    this.knobTime = knobTime;
+    if (typeof knobTime === "undefined")
+    {
+      this.knobTime = 0;
+    }
+    else
+    {
+      this.knobTime = knobTime;
+    }
   }
 
   function getKnobName()
