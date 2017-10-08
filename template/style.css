@@ -39,3 +39,7 @@ body {
 #message {
   background-color: white;
 }
+
+#input {
+  columns: 3;
+}

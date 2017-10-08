@@ -37,10 +37,52 @@
       <meta name="google-signin-client_id" content="575098076279-s7l8cdn13p4a1e0qasm572mhavd0lb08.apps.googleusercontent.com">
       <div class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
+    <div>
+      <a href="#" onclick="signOut();">Sign out </a>
+      <script>
+        function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+            console.log('User signed out.');
+          });
+        }
+      </script>
+    </div>
   </div>
 
   <div ID="message">
     Message
+  </div>
+
+  <div>Enter your knob below:</div>
+
+  <script>
+    function information() {
+      var knob = document.getElementById("userKnob").value;
+      var name = document.getElementById("userName").value;
+      var time = document.getElementById("userTime").value;
+      var div = document.createElement("p");
+      div.innerHTML = ["Knob: " + knob + "; Name: " + name + "; Time: " + time];
+      document.body.appendChild(div);
+    }
+  </script>
+  <div ID="input">
+    <div>
+      <form id="form" onsubmit="return false;">
+        <input   type="text" id="userKnob">
+      </form>
+    </div>
+    <div>
+      <form id="form" onsubmit="return false;">
+        <input   type="text" id="userName">
+      </form>
+    </div>
+    <div>
+      <form id="form" onsubmit="return false;">
+        <input   type="text" id="userTime">
+      </form>
+    </div>
+    <input   type="submit"    onclick="information()">
   </div>
 
 </body>

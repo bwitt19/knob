@@ -37,6 +37,17 @@
       <meta name="google-signin-client_id" content="575098076279-s7l8cdn13p4a1e0qasm572mhavd0lb08.apps.googleusercontent.com">
       <div class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
+    <div>
+      <a href="#" onclick="signOut();">Sign out </a>
+      <script>
+        function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+            console.log('User signed out.');
+          });
+        }
+      </script>
+    </div>
   </div>
 
   <div ID="message">
