@@ -15,7 +15,7 @@ body {
 #navbar {
   background-color: grey;
   text-align: center;
-  columns: 5;
+  columns: 6;
   border: 50%;
 }
 
@@ -33,4 +33,9 @@ body {
 #mission {
   color: black;
   font-size: 14pt;
+  background-color: white;
+}
+
+#message {
+  background-color: white;
 }
