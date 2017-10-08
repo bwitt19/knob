@@ -34,7 +34,7 @@
     </div>
     <div>
       <script src="https://apis.google.com/js/platform.js" async defer></script>
-      <meta name="google-signin-client_id" content="575098076279-s7l8cdn13p4a1e0qasm572mhavd0lb08.apps.googleusercontent.com">
+      <meta name="google-signin-client_id" content="361955621352-dbn2qo7h4slaemg2a8ou678ga89rbq7h.apps.googleusercontent.com">
       <div class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
     <div>
@@ -49,40 +49,29 @@
       </script>
     </div>
   </div>
-
   <div ID="message">
-    Message
-  </div>
+    <div>Enter your knob below:</div>
 
-  <div>Enter your knob below:</div>
-
-  <script>
-    function information() {
-      var knob = document.getElementById("userKnob").value;
-      var name = document.getElementById("userName").value;
-      var time = document.getElementById("userTime").value;
-      var div = document.createElement("p");
-      div.innerHTML = ["Knob: " + knob + "; Name: " + name + "; Time: " + time];
-      document.body.appendChild(div);
-    }
-  </script>
-  <div ID="input">
-    <div>
-      <form id="form" onsubmit="return false;">
-        <input   type="text" id="userKnob">
-      </form>
+    <script>
+      function information() {
+        var knob = document.getElementById("userKnob").value;
+        var name = document.getElementById("userName").value;
+        var time = document.getElementById("userTime").value;
+        var div = document.createElement("p");
+        div.innerHTML = ["Knob: " + knob + "; Name: " + name + "; Time: " + time];
+        document.body.appendChild(div);
+      }
+    </script>
+    <div ID="input">
+      <div>
+        <form id="form" onsubmit="return false;">
+          Enter your Knob<input   type="text" id="userKnob">
+          Enter your Name<input   type="text" id="userName">
+          Enter your Time<input   type="text" id="userTime">
+        </form>
+      </div>
+      <input   type="submit"    onclick="information()">
     </div>
-    <div>
-      <form id="form" onsubmit="return false;">
-        <input   type="text" id="userName">
-      </form>
-    </div>
-    <div>
-      <form id="form" onsubmit="return false;">
-        <input   type="text" id="userTime">
-      </form>
-    </div>
-    <input   type="submit"    onclick="information()">
   </div>
 
 </body>

@@ -1,13 +1,14 @@
 /* Style.css */
 body {
-  background-color: #68BED8;
+  background-color: #69BED8;
 
 }
 
 #title {
   text-align: center;
-  font-size: 30pt;
-  background-color: #68BED8;
+  font-family: Impact;
+  font-size: 36pt;
+  background-color: #69BED8;
   color: grey;
   text-decoration: bold;
 }
@@ -38,8 +39,16 @@ body {
 
 #message {
   background-color: white;
+  font-family: "Comic Sans MS";
+  color: grey;
+  border: 25%;
+  text-align: center;
 }
 
 #input {
+}
+
+#form {
   columns: 3;
+  text-align: center;
 }
